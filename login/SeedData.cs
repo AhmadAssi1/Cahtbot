@@ -4,14 +4,15 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using System.Threading.Tasks;
 using login.models;
+using login.Data;
 
 namespace Login.Data
 {
-    public static class SeedData
+    public class SeedData
     {
         public static async Task Initialize(IServiceProvider serviceProvider)
         {
-            using (var context = new DbContext(serviceProvider.GetRequiredService<DbContextOptions<DbContext>>()))
+            using (var context = new DataContext(serviceProvider.GetRequiredService<DbContextOptions<DataContext>>()))
             {
                 if (context.Users.Any())
                 {
@@ -25,7 +26,7 @@ namespace Login.Data
             }
         }
 
-        private static async Task SeedUsers(DbContext context)
+        private static async Task SeedUsers(DataContext context)
         {
             // Seed users here
             var users = new user[]
@@ -34,11 +35,11 @@ namespace Login.Data
                 // Add more users as needed
             };
 
-            await context.AddRangeAsync(users);
+            await context.Users.AddRangeAsync(users);
             await context.SaveChangesAsync();
         }
 
-        private static async Task SeedAgents(DbContext context)
+        private static async Task SeedAgents(DataContext context)
         {
             // Seed agents here
             var agents = new Agents[]
@@ -47,11 +48,11 @@ namespace Login.Data
                 // Add more agents as needed
             };
 
-            await context.AddRangeAsync(agents);
+            await context.Agents.AddRangeAsync(agents);
             await context.SaveChangesAsync();
         }
 
-        private static async Task SeedClients(DbContext context)
+        private static async Task SeedClients(DataContext context)
         {
             // Seed clients here
             var clients = new clients[]
@@ -60,8 +61,10 @@ namespace Login.Data
                 // Add more clients as needed
             };
 
-            await context.AddRangeAsync(clients);
+            await context.Clients.AddRangeAsync(clients);
             await context.SaveChangesAsync();
         }
+
+        
     }
 }

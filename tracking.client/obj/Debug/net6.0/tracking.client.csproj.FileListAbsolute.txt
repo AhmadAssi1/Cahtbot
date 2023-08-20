@@ -1,0 +1,14 @@
+D:\VS\login\tracking.client\bin\Debug\net6.0\tracking.client.exe
+D:\VS\login\tracking.client\bin\Debug\net6.0\tracking.client.deps.json
+D:\VS\login\tracking.client\bin\Debug\net6.0\tracking.client.runtimeconfig.json
+D:\VS\login\tracking.client\bin\Debug\net6.0\tracking.client.dll
+D:\VS\login\tracking.client\bin\Debug\net6.0\tracking.client.pdb
+D:\VS\login\tracking.client\obj\Debug\net6.0\tracking.client.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS\login\tracking.client\obj\Debug\net6.0\tracking.client.AssemblyInfoInputs.cache
+D:\VS\login\tracking.client\obj\Debug\net6.0\tracking.client.AssemblyInfo.cs
+D:\VS\login\tracking.client\obj\Debug\net6.0\tracking.client.csproj.CoreCompileInputs.cache
+D:\VS\login\tracking.client\obj\Debug\net6.0\tracking.client.dll
+D:\VS\login\tracking.client\obj\Debug\net6.0\refint\tracking.client.dll
+D:\VS\login\tracking.client\obj\Debug\net6.0\tracking.client.pdb
+D:\VS\login\tracking.client\obj\Debug\net6.0\tracking.client.genruntimeconfig.cache
+D:\VS\login\tracking.client\obj\Debug\net6.0\ref\tracking.client.dll
